@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromptCraft AI - Static</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <h1>PromptCraft AI</h1>
+
+    <textarea
+      id="promptInput"
+      placeholder="Enter your rough prompt here..."
+    ></textarea>
+
+    <div class="selectors">
+      <label>
+        AI Platform:
+        <select id="platformSelect">
+          <option value="ChatGPT">ChatGPT</option>
+          <option value="Claude">Claude</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Mode:
+        <select id="modeSelect">
+          <option value="DETAIL">Detail Mode</option>
+          <option value="BASIC">Basic Mode</option>
+        </select>
+      </label>
+    </div>
+
+    <button id="generateBtn">Generate Optimized Prompt</button>
+
+    <div id="outputWrapper" class="hidden">
+      <h2>🧠 Optimized Prompt Result</h2>
+      <div id="outputArea"></div>
+    </div>
+
+    <div class="linkedin-footer">
+      <p>
+        🚀 Want to connect?
+        <a
+          href="https://www.linkedin.com/in/mohamed-amine-elmahboub"
+          target="_blank"
+          >Connect with me on LinkedIn</a
+        >
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
